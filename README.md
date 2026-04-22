@@ -15,10 +15,7 @@ pasbuild init
 ```bash
 pasbuild compile
 ./target/example1
-```
-
-Build using a profile:
-```bash
+## Build using a profile:
 pasbuild compile -p debug
 ```
 
