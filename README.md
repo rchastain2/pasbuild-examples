@@ -1,6 +1,8 @@
 # PasBuild examples
 
-## Memento
+Reference: [PasBuild Quick Start Guide](https://github.com/graemeg/PasBuild/blob/master/docs/quick-start-guide.adoc)
+
+## Create project
 
 ```bash
 mkdir example1
@@ -8,14 +10,21 @@ cd example1
 pasbuild init
 ```
 
+## Build
+
 ```bash
 pasbuild compile
 ./target/example1
 ```
 
+Build using a profile:
 ```bash
 pasbuild compile -p debug
 ```
 
-## Links
-- [PasBuild Quick Start Guide](https://github.com/graemeg/PasBuild/blob/master/docs/quick-start-guide.adoc)
+## Package
+
+```bash
+pasbuild package
+pasbuild source-package
+```
