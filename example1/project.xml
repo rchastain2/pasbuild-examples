@@ -11,7 +11,7 @@
     <executableName>example1</executableName>
     <outputDirectory>target</outputDirectory>
   </build>
-
+  
   <test>
     <framework>auto</framework>
     <testSource>TestRunner.pas</testSource>
@@ -19,4 +19,31 @@
       <option>--all --format=plain</option>
     </frameworkOptions>
   </test>
+  
+  <profiles>
+    <profile>
+      <id>debug</id>
+      <defines>
+        <define>DEBUG</define>
+      </defines>
+      <compilerOptions>
+        <option>-g</option>        <!-- Debug symbols -->
+        <option>-gl</option>       <!-- Line info -->
+        <option>-Criot</option>    <!-- Range/overflow/I/O checks -->
+        <option>-gh</option>       <!-- Heap trace -->
+      </compilerOptions>
+    </profile>
+
+    <profile>
+      <id>release</id>
+      <defines>
+        <define>RELEASE</define>
+      </defines>
+      <compilerOptions>
+        <option>-O3</option>       <!-- Maximum optimization -->
+        <option>-CX</option>       <!-- Smart linking -->
+        <option>-XX</option>       <!-- Strip symbols -->
+      </compilerOptions>
+    </profile>
+  </profiles>
 </project>
