@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <name>example1</name>
+  <version>1.0.0</version>
+  <author>roland</author>
+  <license>MIT</license>
+
+  <build>
+    <projectType>application</projectType>
+    <mainSource>Main.pas</mainSource>
+    <executableName>example1</executableName>
+    <outputDirectory>target</outputDirectory>
+  </build>
+
+  <test>
+    <framework>auto</framework>
+    <testSource>TestRunner.pas</testSource>
+    <frameworkOptions>
+      <option>--all --format=plain</option>
+    </frameworkOptions>
+  </test>
+</project>
