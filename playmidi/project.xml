@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <name>playmidi</name>
+  <version>1.0.0</version>
+  <author>roland</author>
+  <license>MIT</license>
+
+  <build>
+    <projectType>application</projectType>
+    <mainSource>Main.pas</mainSource>
+    <executableName>playmidi</executableName>
+    <outputDirectory>target</outputDirectory>
+    
+    <compilerOptions>
+      <option>-ghl</option>
+    </compilerOptions>
+    
+  </build>
+
+  <test>
+    <framework>auto</framework>
+    <testSource>TestRunner.pas</testSource>
+    <frameworkOptions>
+      <option>--all --format=plain</option>
+    </frameworkOptions>
+  </test>
+</project>
