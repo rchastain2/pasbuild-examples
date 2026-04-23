@@ -16,7 +16,16 @@
     </compilerOptions>
     
   </build>
-
+  
+  <profiles>
+    <profile>
+      <id>demo</id>
+      <defines>
+        <define>DEMO</define>
+      </defines>
+    </profile>
+  </profiles>
+  
   <test>
     <framework>auto</framework>
     <testSource>TestRunner.pas</testSource>
