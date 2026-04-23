@@ -20,9 +20,7 @@ begin
 end;
 
 const
- {CFont ='fonts/GeneralUser-GS/GeneralUser-GS.sf2';
-  CFont ='fonts/FluidR3_GM2-2.SF2';}
-  CFont ='fonts/SC55Soundfont-1.2b/SC-55 SoundFont v1.2b.sf2';
+  CFont ='SC-55 SoundFont v1.2b.sf2';
 
 var
   fluidsynth: TFluidSynth = nil;
